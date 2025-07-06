@@ -75,7 +75,7 @@ function deleteTask(index) {
 function updatePlant() {
     const stages = ["seed", "sprout", "plant", "leafy", "flower"];
     const stageIndex = Math.min(Math.floor(completedTasks / 5), stages.length - 1);
-    plantImage.src = `res/${stages[stageIndex]}.png`;
+    plantImage.src = `${stages[stageIndex]}.png`;
     
     if (completedTasks >= 5 && completedTasks % 5 === 0) {
         setTimeout(() => alert(`Congratulations! You've completed ${completedTasks} tasks 🌸`), 300);
